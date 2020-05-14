@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  background-image: url('https://images3.alphacoders.com/279/279245.jpg');
+  background-size: auto 100vh; 
+  font-family:'Audiowide', cursive;
+  height: 100vh;
+  font-size: 5px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar esses estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+}
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+}
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 20px;
+}
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 26px;
+    color: whitesmoke;
+}
+}
+
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: White;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a {
+ color:black;
+padding: 20px 30px;
+display: block;
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu ul{
+  display:flex;
+  justify-content: space-around;
+}
+
+.site-subtitle,
+.site-title {
+  color: yellow;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+  font-family: 'Merienda', cursive;
+}
+
+.site-subtitle {
+  font-style: italic;
+  font-family: 'Caveat', cursive;
+}
+
+.planos {
+  padding: 2em;
+  height: 100vh;
+}
+
+.planos h2 {
+  font-family: 'Audiowide', cursive;
+  color: yellow;
+  margin-bottom: 0em;
+  font-size: 2em;
+}
+
+.planos .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .planos .grid {
+    grid-template-columns: 240px 240px;
+  }
+ }
+
+ @media (min-width: 800px) {
+  .planos .grid {
+    grid-template-columns: repeat(2, 240px);
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+ }
+
+.planos figure {
+  text-align: center;
+  color: ;
+}
+
+.img-planos {
+  height: 210px;
+  width: 250px;
+}
+
+@media (min-width; 800px; ) {
+  .img-planos {
+    height: 240px;
+    width: 280;
+  }
+}
+
